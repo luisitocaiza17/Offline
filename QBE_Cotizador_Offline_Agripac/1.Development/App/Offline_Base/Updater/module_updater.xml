@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_updater" default="compile.module.updater">
+  <dirname property="module.updater.basedir" file="${ant.file.module_updater}"/>
+  
+  <property name="module.jdk.home.updater" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.updater" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.updater" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.updater" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="updater.output.dir" value="${module.updater.basedir}/../../../../out/production/Updater"/>
+  <property name="updater.testoutput.dir" value="${module.updater.basedir}/../../../../out/test/Updater"/>
+  
+  <path id="updater.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="updater.module.production.classpath">
+    <path refid="${module.jdk.classpath.updater}"/>
+    <pathelement location="${offline_base.output.dir}"/>
+    <path refid="library.offline_base1.classpath"/>
+    <pathelement location="${basedir}/1.Development/App/Offline_Base/Lib/gson-2.2.4.jar"/>
+  </path>
+  
+  <path id="updater.runtime.production.module.classpath">
+    <pathelement location="${updater.output.dir}"/>
+    <path refid="offline_base.runtime.production.module.classpath"/>
+    <path refid="library.offline_base1.classpath"/>
+    <pathelement location="${basedir}/1.Development/App/Offline_Base/Lib/gson-2.2.4.jar"/>
+  </path>
+  
+  <path id="updater.module.classpath">
+    <path refid="${module.jdk.classpath.updater}"/>
+    <pathelement location="${updater.output.dir}"/>
+    <pathelement location="${offline_base.testoutput.dir}"/>
+    <pathelement location="${offline_base.output.dir}"/>
+    <path refid="library.offline_base1.classpath"/>
+    <pathelement location="${basedir}/1.Development/App/Offline_Base/Lib/gson-2.2.4.jar"/>
+  </path>
+  
+  <path id="updater.runtime.module.classpath">
+    <pathelement location="${updater.testoutput.dir}"/>
+    <pathelement location="${updater.output.dir}"/>
+    <path refid="offline_base.runtime.module.classpath"/>
+    <path refid="library.offline_base1.classpath"/>
+    <pathelement location="${basedir}/1.Development/App/Offline_Base/Lib/gson-2.2.4.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.updater">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.updater">
+    <patternset refid="excluded.from.module.updater"/>
+  </patternset>
+  
+  <path id="updater.module.sourcepath">
+    <dirset dir="${module.updater.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.updater" depends="compile.module.updater.production,compile.module.updater.tests" description="Compile module Updater"/>
+  
+  <target name="compile.module.updater.production" depends="register.custom.compilers,compile.module.offline_base" description="Compile module Updater; production classes">
+    <mkdir dir="${updater.output.dir}"/>
+    <javac2 destdir="${updater.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.updater}/javac">
+      <compilerarg line="${compiler.args.updater}"/>
+      <bootclasspath refid="updater.module.bootclasspath"/>
+      <classpath refid="updater.module.production.classpath"/>
+      <src refid="updater.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.updater"/>
+    </javac2>
+    
+    <copy todir="${updater.output.dir}">
+      <fileset dir="${module.updater.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.updater.tests" depends="register.custom.compilers,compile.module.updater.production" description="compile module Updater; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.updater" description="cleanup module">
+    <delete dir="${updater.output.dir}"/>
+    <delete dir="${updater.testoutput.dir}"/>
+  </target>
+</project>

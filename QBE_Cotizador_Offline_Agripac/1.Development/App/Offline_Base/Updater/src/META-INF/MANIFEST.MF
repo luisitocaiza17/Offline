@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Class-Path: Offline_Base.jar YaHPConverter.jar Offline_Base.jar gson-2
+ .2.4.jar gson-2.2.4.jar Updater.jar commons-codec-1.10-test-sources.j
+ ar commons-logging-1.1.3.jar core-renderer.jar commons-codec-1.10.jar
+  javax.servlet.jsp.jar shani-parser-v1.4.17.jar javax.persistence.jar
+  javax.annotation.jar javax.servlet.jsp.jstl.jar commons-codec-1.10-t
+ ests.jar javax.resource.jar itext-2.1.7.jar commons-codec-1.10-source
+ s.jar javax.ejb.jar jcalendar-1.4.jar zip4j_1.3.2.jar httpclient-4.3.
+ jar xml-apis.jar jaxen-1.1.1.jar jgoodies-common-1.2.0.jar htmlunit-2
+ .15-OSGi.jar gson-2.2.4.jar javax.jms.jar junit-4.6.jar javax.servlet
+ .jar commons-codec-1.10-javadoc.jar jgoodies-looks-2.4.1.jar gson-2.2
+ .4-sources.jar log4j-1.2.16.jar gson-2.2.4-javadoc.jar jtidy-r938.jar
+  javax.transaction.jar httpcore-4.3.jar microba-0.4.4.3.jar YaHPConve
+ rter.jar
+Main-Class: Main
+

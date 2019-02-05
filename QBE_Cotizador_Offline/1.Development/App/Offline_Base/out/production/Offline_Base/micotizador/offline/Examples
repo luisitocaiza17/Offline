@@ -1,0 +1,24 @@
+  // maximizar inicialmente
+        //setExtendedState(this.getExtendedState() | JFrame.MAXIMIZED_BOTH);
+
+        // centrar inicialmente
+        //setLocationRelativeTo(null);
+
+        // Message Box
+        //JOptionPane.showMessageDialog(null, txt_Nombre.getText() + " no es");
+
+        // Lectura de archivo (para la lectura del archivo de configuración)
+
+//                try {
+//                    final File f = new File(Main.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+//                    Path p = FileSystems.getDefault().getPath(f.toString() + "\\micotizador\\offline\\data.config");
+//                    String contents = new String(Files.readAllBytes(p), StandardCharsets.UTF_8);
+//
+//                    JOptionPane.showMessageDialog(null, contents);
+//                }
+//                catch (Exception ignore){}
+
+
+        // creación de la nueva ventana NO MODAL
+        //CotizadorAgricola ca = new CotizadorAgricola();
+        //ca.setVisible(true);

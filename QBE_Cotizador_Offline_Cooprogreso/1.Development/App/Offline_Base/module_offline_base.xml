@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_offline_base" default="compile.module.offline_base">
+  <dirname property="module.offline_base.basedir" file="${ant.file.module_offline_base}"/>
+  
+  <property name="module.jdk.home.offline_base" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.offline_base" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.offline_base" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.offline_base" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="offline_base.output.dir" value="${module.offline_base.basedir}/../../../out/production/Offline_Base"/>
+  <property name="offline_base.testoutput.dir" value="${module.offline_base.basedir}/../../../out/test/Offline_Base"/>
+  
+  <path id="offline_base.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="offline_base.module.production.classpath">
+    <path refid="${module.jdk.classpath.offline_base}"/>
+    <pathelement location="${basedir}/1.Development/App/Offline_Base/Lib/YaHPConverter.jar"/>
+    <path refid="library.offline_base.classpath"/>
+    <path refid="library.lib.classpath"/>
+    <path refid="library.updater.classpath"/>
+  </path>
+  
+  <path id="offline_base.runtime.production.module.classpath">
+    <pathelement location="${offline_base.output.dir}"/>
+    <pathelement location="${basedir}/1.Development/App/Offline_Base/Lib/YaHPConverter.jar"/>
+    <path refid="library.offline_base.classpath"/>
+    <path refid="library.lib.classpath"/>
+    <path refid="library.updater.classpath"/>
+  </path>
+  
+  <path id="offline_base.module.classpath">
+    <path refid="${module.jdk.classpath.offline_base}"/>
+    <pathelement location="${offline_base.output.dir}"/>
+    <pathelement location="${basedir}/1.Development/App/Offline_Base/Lib/YaHPConverter.jar"/>
+    <path refid="library.offline_base.classpath"/>
+    <path refid="library.lib.classpath"/>
+    <path refid="library.updater.classpath"/>
+  </path>
+  
+  <path id="offline_base.runtime.module.classpath">
+    <pathelement location="${offline_base.testoutput.dir}"/>
+    <pathelement location="${offline_base.output.dir}"/>
+    <pathelement location="${basedir}/1.Development/App/Offline_Base/Lib/YaHPConverter.jar"/>
+    <path refid="library.offline_base.classpath"/>
+    <path refid="library.lib.classpath"/>
+    <path refid="library.updater.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.offline_base">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.offline_base">
+    <patternset refid="excluded.from.module.offline_base"/>
+  </patternset>
+  
+  <path id="offline_base.module.sourcepath">
+    <dirset dir="${module.offline_base.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.offline_base" depends="compile.module.offline_base.production,compile.module.offline_base.tests" description="Compile module Offline_Base"/>
+  
+  <target name="compile.module.offline_base.production" depends="register.custom.compilers" description="Compile module Offline_Base; production classes">
+    <mkdir dir="${offline_base.output.dir}"/>
+    <javac2 destdir="${offline_base.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.offline_base}/javac">
+      <compilerarg line="${compiler.args.offline_base}"/>
+      <bootclasspath refid="offline_base.module.bootclasspath"/>
+      <classpath refid="offline_base.module.production.classpath"/>
+      <src refid="offline_base.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.offline_base"/>
+    </javac2>
+    
+    <copy todir="${offline_base.output.dir}">
+      <fileset dir="${module.offline_base.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.offline_base.tests" depends="register.custom.compilers,compile.module.offline_base.production" description="compile module Offline_Base; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.offline_base" description="cleanup module">
+    <delete dir="${offline_base.output.dir}"/>
+    <delete dir="${offline_base.testoutput.dir}"/>
+  </target>
+</project>

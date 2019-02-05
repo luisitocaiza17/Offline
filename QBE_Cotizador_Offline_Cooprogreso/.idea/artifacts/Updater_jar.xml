@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact name="Updater:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Updater_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Updater.jar">
+        <element id="module-output" name="Updater" />
+        <element id="module-output" name="Offline_Base" />
+        <element id="library" level="project" name="lib" />
+      </element>
+    </root>
+  </artifact>
+</component>

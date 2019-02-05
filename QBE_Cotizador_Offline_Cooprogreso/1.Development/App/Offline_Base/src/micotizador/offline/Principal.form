@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="micotizador.offline.Principal">
+  <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="11" y="1" width="294" height="790"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="ac0d6" class="javax.swing.JButton" binding="btn_CerrarSesion">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="micotizador/offline/image/salir_.png"/>
+          <text value="Salir del Sistema"/>
+        </properties>
+      </component>
+      <component id="4a19b" class="javax.swing.JButton" binding="btn_CrearUsuario">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="micotizador/offline/image/user_add.png"/>
+          <text value=" Crear  Usuario "/>
+        </properties>
+      </component>
+      <component id="d8637" class="javax.swing.JButton" binding="btn_IniciaCotizaciones">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="micotizador/offline/image/Cotizador.png"/>
+          <text value="Iniciar Cotizaciones"/>
+        </properties>
+      </component>
+      <component id="cce5f" class="javax.swing.JButton" binding="btn_EnviarCotizaciones">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="micotizador/offline/image/EnviarCotizaciones.png"/>
+          <text value="Enviar Cotizaciones"/>
+        </properties>
+      </component>
+      <component id="1a7dd" class="javax.swing.JButton" binding="btn_Historico">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="micotizador/offline/image/historico.png"/>
+          <text value="Consultar Histórico "/>
+        </properties>
+      </component>
+      <component id="cf537" class="javax.swing.JButton" binding="btConsultarCotizacion">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="micotizador/offline/image/icono-busqueda.png"/>
+          <text value="Consultar Cotización"/>
+        </properties>
+      </component>
+      <component id="a1673" class="javax.swing.JButton" binding="btn_Historico_CI">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="micotizador/offline/image/historico.png"/>
+          <text value="Consultar Histórico CI"/>
+        </properties>
+      </component>
+      <component id="d0471" class="javax.swing.JButton" binding="btnActualizar">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="128" height="73"/>
+          </grid>
+        </constraints>
+        <properties>
+          <icon value="micotizador/offline/image/logo.png"/>
+          <text value="Actualizar"/>
+        </properties>
+      </component>
+      <component id="1d9b5" class="javax.swing.JLabel" binding="lbl_Version">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <text value="Versión:"/>
+        </properties>
+      </component>
+      <component id="ff1cf" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="13" style="1"/>
+          <text value="Cotizador Agrícola COOPROGRESO"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

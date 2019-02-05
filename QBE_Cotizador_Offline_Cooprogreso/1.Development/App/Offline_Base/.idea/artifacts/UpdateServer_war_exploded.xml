@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="UpdateServer:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/UpdateServer_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="UpdateServer/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="UpdateServer" />
+          <element id="module-output" name="Offline_Base" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Lib" />
+          <element id="file-copy" path="$PROJECT_DIR$/Lib/YaHPConverter.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

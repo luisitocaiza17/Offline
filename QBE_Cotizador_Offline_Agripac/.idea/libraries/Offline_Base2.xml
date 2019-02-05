@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Offline_Base">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/UpdateServer/BaseApp/Offline_Base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/gson-2.2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/gson-2.2.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/gson-2.2.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

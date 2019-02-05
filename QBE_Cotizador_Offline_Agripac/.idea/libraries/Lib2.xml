@@ -1,0 +1,44 @@
+<component name="libraryTable">
+  <library name="Lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/gson-2.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/htmlunit-2.15-OSGi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/jgoodies-common-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/java-util-1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/javax.servlet.jsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/jgoodies-looks-2.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/javax.resource.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/jcalendar-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/jaxen-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/javax.servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/commons-logging-1.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/microba-0.4.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/commons-codec-1.10-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/junit-4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/httpcore-4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/core-renderer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/javax.jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/commons-codec-1.10-test-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/gson-2.2.4-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/zip4j_1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/commons-codec-1.10-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/javax.transaction.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/httpclient-4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/shani-parser-v1.4.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/xml-apis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/jtidy-r938.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/YaHPConverter.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/itext-2.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/commons-codec-1.10-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/gson-2.2.4-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

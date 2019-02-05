@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="Offline_Base:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Offline_Base_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Offline_Base.jar">
+        <element id="module-output" name="Offline_Base" />
+        <element id="library" level="project" name="lib" />
+      </element>
+    </root>
+  </artifact>
+</component>

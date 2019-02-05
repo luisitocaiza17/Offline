@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact name="Offline_Base:jar3">
+    <output-path>$PROJECT_DIR$/out/artifacts/Offline_Base_jar3</output-path>
+    <root id="root">
+      <element id="archive" name="Offline_Base.jar">
+        <element id="module-output" name="Offline_Base" />
+        <element id="library" level="project" name="lib" />
+      </element>
+      <element id="library" level="project" name="Updater" />
+      <element id="file-copy" path="$PROJECT_DIR$/1.Development/App/Offline_Base/Lib/YaHPConverter.jar" />
+      <element id="library" level="project" name="Offline_Base" />
+    </root>
+  </artifact>
+</component>
